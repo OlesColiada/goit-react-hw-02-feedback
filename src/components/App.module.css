@@ -1,0 +1,8 @@
+.mainDiv{    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 30px;
+    color: black}
