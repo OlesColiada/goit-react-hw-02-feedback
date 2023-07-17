@@ -16,6 +16,7 @@ class App extends Component {
       notificationMessage: 'There is no feedback',
     };
   }
+  
 
   handleFeedback = type => {
     this.setState(prevState => ({
