@@ -1,19 +1,19 @@
-import React, {Component} from "react";
-import Statistics from "./Statistics/statistics";
-import FeedbackOptions from "./FeedbackOptions/feedbackOptions";
-import Section from "./Section/Section";
-import styles from "./App.module.css"
+import React, { Component } from 'react';
+import Statistics from './Statistics/statistics';
+import FeedbackOptions from './FeedbackOptions/feedbackOptions';
+import Section from './Section/Section';
+import styles from './App.module.css';
 
 class App extends Component {
   state = {
     good: 0,
     neutral: 0,
-    bad: 0
+    bad: 0,
   };
 
-  handleFeedback = (option) => {
-    this.setState((prevState) => ({
-      [option]: prevState[option] + 1
+  handleFeedback = option => {
+    this.setState(prevState => ({
+      [option]: prevState[option] + 1,
     }));
   };
 
